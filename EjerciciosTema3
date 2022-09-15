@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        
+        int resultado;
+        resultado = sumas(1,2,3);
+        System.out.println("El resultado de la suma es " + resultado); /** mostrar resultado de suma */
+        
+        coche car = new coche(); /** declara nueva variable car de tipo coche */
+        car.addPuerta(); /** añade puerta al coche */
+        System.out.println("Numero de puertas: " + car.puertas); /** muestra numero de puertas en el coche */
+    }
+    
+    public static int sumas(int a, int b, int c){
+        
+        return (a+b+c); /** devuelve suma de inputs */
+    }
+    
+    
+    static class coche {
+        int puertas; /** declara variable para alamacenar numero de puertas */
+        
+        public void addPuerta() {
+            
+            puertas++; /** añade puerta */
+            
+        }
+        
+    }
+}
